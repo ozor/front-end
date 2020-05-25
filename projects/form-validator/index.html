@@ -7,11 +7,41 @@
 
     <link rel="stylesheet" href="assets/styles.css" />
 
-    <title>Form Validator</title>
+    <title>Валидатор формы</title>
 </head>
 <body>
 
+<div class="container">
+    <form id="form" class="form">
+        <h2>Регистрация</h2>
 
+        <div class="form-control">
+            <label for="username">Имя пользователя</label>
+            <input type="text" id="username" placeholder="Введите имя пользователя" />
+            <small>Ошибка</small>
+        </div>
+
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Введите email" />
+            <small>Ошибка/small>
+        </div>
+
+        <div class="form-control">
+            <label for="password">Пароль</label>
+            <input type="password" id="password" placeholder="Введите пароль" />
+            <small>Ошибка</small>
+        </div>
+
+        <div class="form-control">
+            <label for="password2">Повтор пароля</label>
+            <input type="password" id="password2" placeholder="Введите повтор пароля" />
+            <small>Ошибка</small>
+        </div>
+
+        <button type="submit">Отправить</button>
+    </form>
+</div>
 
 <script src="assets/scripts.js"></script>
 </body>
